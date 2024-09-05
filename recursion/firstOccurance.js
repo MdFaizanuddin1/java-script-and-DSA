@@ -14,5 +14,5 @@ const recursiveFirstOcc = (arr, findMe, currIndex) => {
   if (arr[currIndex] == findMe) return currIndex;
   if (currIndex === arr.length) return -1;
 
-  return recursiveFirstOcc(arr, findMe, currIndex++);
+  return recursiveFirstOcc(arr, findMe, currIndex+1);
 };

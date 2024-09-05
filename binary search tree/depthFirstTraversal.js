@@ -25,8 +25,8 @@ const iterativeDepthFirstTraversal = (root) => {
     if (node.left !== null) {
       stack.push(node.left);
     }
-    return values;
   }
+  return values;
 };
 
 function recursiveDepthFirstTraversal(root) {
