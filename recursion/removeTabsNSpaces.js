@@ -16,7 +16,7 @@ function recursiveRTAS(inputString) {
   const firstChar = inputString[0];
   const restOfString = inputString.slice(1);
 
-  if (firstChar === " " && firstChar === "\t") {
+  if (firstChar === " " || firstChar === "\t") {
     return recursiveRTAS(restOfString);
   } else {
     return firstChar + recursiveRTAS(restOfString);
